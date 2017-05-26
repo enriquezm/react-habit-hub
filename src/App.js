@@ -43,6 +43,65 @@ class UserProfile extends React.Component {
   }
 }
 
+class SVGGraph extends React.Component {
+  render() {
+    return (
+      <svg width="117">
+        <rect x="0" y="0" width="15" height="15"  />
+        <rect x="17" y="0" width="15" height="15"  />
+        <rect x="34" y="0" width="15" height="15"  />
+        <rect x="51" y="0" width="15" height="15"  />
+        <rect x="68" y="0" width="15" height="15"  />
+        <rect x="85" y="0" width="15" height="15"  />
+        <rect x="102" y="0" width="15" height="15"  />
+
+        <rect x="0" y="17" width="15" height="15"  />
+        <rect x="17" y="17" width="15" height="15"  />
+        <rect x="34" y="17" width="15" height="15"  />
+        <rect x="51" y="17" width="15" height="15"  />
+        <rect x="68" y="17" width="15" height="15"  />
+        <rect x="85" y="17" width="15" height="15"  />
+        <rect x="102" y="17" width="15" height="15"  />
+
+        <rect x="0" y="34" width="15" height="15"  />
+        <rect x="17" y="34" width="15" height="15"  />
+        <rect x="34" y="34" width="15" height="15"  />
+        <rect x="51" y="34" width="15" height="15"  />
+        <rect x="68" y="34" width="15" height="15"  />
+        <rect x="85" y="34" width="15" height="15"  />
+        <rect x="102" y="34" width="15" height="15"  />
+
+        <rect x="0" y="51" width="15" height="15"  />
+        <rect x="17" y="51" width="15" height="15"  />
+        <rect x="34" y="51" width="15" height="15"  />
+        <rect x="51" y="51" width="15" height="15"  />
+        <rect x="68" y="51" width="15" height="15"  />
+        <rect x="85" y="51" width="15" height="15"  />
+        <rect x="102" y="51" width="15" height="15"  />
+
+        <rect x="0" y="68" width="15" height="15"  />
+        <rect x="17" y="68" width="15" height="15"  />
+        <rect x="34" y="68" width="15" height="15"  />
+        <rect x="51" y="68" width="15" height="15"  />
+        <rect x="68" y="68" width="15" height="15"  />
+        <rect x="85" y="68" width="15" height="15"  />
+        <rect x="102" y="68" width="15" height="15"  />
+      </svg>
+    );
+  }
+}
+
+class UserHabit extends React.Component {
+  render() {
+    return(
+      <div className="col-xs-6 col-md-4">
+        <Title text="Yoga" />
+        <SVGGraph />
+      </div>
+    );
+  }
+}
+
 class App extends React.Component{
   render() {
     return (
@@ -51,7 +110,11 @@ class App extends React.Component{
           <UserProfile />
         </section>
         <section className="user-habits">
-          <Title text="Yoga" />
+          <div className="row">
+            <UserHabit />
+            <UserHabit />
+            <UserHabit />
+          </div>
         </section>
 
       </div>
