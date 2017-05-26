@@ -29,7 +29,7 @@ class App extends React.Component{
   render() {
     return (
       <div className="container">
-        <section>
+        <section className="user-profile">
           <div className="card">
             <div className="row">
               <div className="col-xs-4 col-xs-offset-4 user-profile-container">
@@ -43,6 +43,9 @@ class App extends React.Component{
               </div>
             </div>
           </div>
+        </section>
+        <section className="user-habits">
+          
         </section>
 
       </div>
