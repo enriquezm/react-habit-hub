@@ -9,10 +9,10 @@ class Avatar extends React.Component {
   }
 }
 
-class Name extends React.Component {
+class Title extends React.Component {
   render() {
     return (
-      <div>Myles Enriquez</div>
+      <h3>{this.props.text}</h3>
     );
   }
 }
@@ -34,7 +34,7 @@ class UserProfile extends React.Component {
               <Avatar />
             </div>
             <div>
-              <Name />
+              <Title text="Myles Enriquez" />
               <Description />
             </div>
           </div>
@@ -52,7 +52,7 @@ class App extends React.Component{
           <UserProfile />
         </section>
         <section className="user-habits">
-
+          <Title text="Yoga" />
         </section>
 
       </div>
