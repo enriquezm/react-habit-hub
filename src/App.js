@@ -24,28 +24,35 @@ class Description extends React.Component {
     );
   }
 }
+class UserProfile extends React.Component {
+  render() {
+    return (
+      <div className="card">
+        <div className="row">
+          <div className="col-xs-4 col-xs-offset-4 user-profile-container">
+            <div>
+              <Avatar />
+            </div>
+            <div>
+              <Name />
+              <Description />
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 class App extends React.Component{
   render() {
     return (
       <div className="container">
         <section className="user-profile">
-          <div className="card">
-            <div className="row">
-              <div className="col-xs-4 col-xs-offset-4 user-profile-container">
-                <div>
-                  <Avatar />
-                </div>
-                <div>
-                  <Name />
-                  <Description />
-                </div>
-              </div>
-            </div>
-          </div>
+          <UserProfile />
         </section>
         <section className="user-habits">
-          
+
         </section>
 
       </div>
