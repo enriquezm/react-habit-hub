@@ -1,10 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class Avatar extends React.Component {
   render() {
     return (
-      <img src="http://i.pravatar.cc/50" alt="Avatar image." />
+      <img src="http://i.pravatar.cc/50" alt="Avatar." />
     );
   }
 }
