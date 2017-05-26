@@ -13,6 +13,14 @@ body {
   flex-flow: row;
 }
 
+img {
+  border-radius: 50%;
+}
+
 div {
   margin: 0 5px;
+}
+
+rect {
+  fill: purple;
 }
