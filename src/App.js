@@ -27,8 +27,8 @@ class UserProfile extends React.Component {
   render() {
     return (
       <div className="card">
-        <div className="row">
-          <div className="col-xs-4 col-xs-offset-4 user-profile-container">
+        <div>
+          <div className="user-profile-container">
             <div>
               <Avatar />
             </div>
@@ -94,7 +94,7 @@ class SVGGraph extends React.Component {
 class UserHabit extends React.Component {
   render() {
     return(
-      <div className="col-xs-6 col-md-4">
+      <div className="fl w-100 w-third-ns pa2">
         <Title text="Yoga" />
         <SVGGraph />
       </div>
@@ -105,15 +105,17 @@ class UserHabit extends React.Component {
 class App extends React.Component{
   render() {
     return (
-      <div className="container">
+      <div>
         <section className="user-profile">
           <UserProfile />
         </section>
         <section className="user-habits">
-          <div className="row">
-            <UserHabit />
-            <UserHabit />
-            <UserHabit />
+          <div className="mw9 center ph3-ns">
+            <div className="cf ph2-ns">
+              <UserHabit />
+              <UserHabit />
+              <UserHabit />
+            </div>
           </div>
         </section>
 
